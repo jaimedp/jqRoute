@@ -12,7 +12,7 @@ How to use it?
 --------------
 The basic routing object simply maps the URL to a method on an object. So for example if you have a page:
 
-http://www.somedomain.com/myController/index
+    http://www.somedomain.com/myController/index
 
 this will map to a call to:
 
@@ -20,14 +20,14 @@ myApplication.controllers.myController.index()
 
 You will just need to create an object like:
 
-myApplication.controllers.myController = {
-	init: function() { 
-		// controller initialization code
-	},
-	index: function() {
-		// anything that you want to do to init the index action
-	}
-};
+    myApplication.controllers.myController = {
+        init: function() { 
+            // controller initialization code
+        },
+        index: function() {
+            // anything that you want to do to init the index action
+        }
+    };
 
 That's it
 
