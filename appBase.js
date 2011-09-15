@@ -8,7 +8,7 @@
                  defaultAction: 'index',
                  controller: function controllerFromUrl() {
                      // match urls in the form ../controllerName/actionName or ../controllerName
-                     var ctl = document.location.href.match(/http[s]?:\/\/[\w\:\.\-\d]+\/([\w\d\-]+)[\/|$]/i);
+                     var ctl = document.location.href.match(/http[s]?:\/\/[\w\:\.\-\d]+\/([\w\d\-]+)[\/|$]?/i);
                      return ctl ? ctl[1].toLowerCase() : this.defaultController;
                  },
                  action: function actionFromUrl() {
