@@ -43,7 +43,7 @@
          initController: function () {
              var activeControllerName =  opts.routingStrategy.controller(); /*getCurrentControllerName*/
              if (activeControllerName && this.controllers[activeControllerName]) {
-                 this.activeController = new this.controllers[activeControllerName]();
+                 this.activeController = this.controllers[activeControllerName];
                  this.activeController.init();
              }
          },
